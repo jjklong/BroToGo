@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+  font-size: 100%;
+}
+
+body{
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  background: #eee;
+  text-align: center;
+  font-family: 'Reenie Beanie', cursive;
+}
+
+.header{
+  width: 100%;
+  height: 250px;
+  background-color: lightblue;
+  display: block;
+  top: 0;
+  position: fixed;
+  h2{
+    margin-top: 0.3em;
+    font-weight: 700;
+    font-size: 10em;
+  }
+}
+
+
+
+
+
+.middle{
+  margin-top: 300px;
+}
+#chatbox{
+  font-family: verdana;
+  font-size: 5em;
+  margin: .5em;
+  .bot{
+    border-radius: 10px;
+    margin: .5em;
+    margin-right: 2em;
+    background-color: lightblue;
+    text-align: left;
+  }
+  .bro{
+    border-radius: 10px;
+    margin: .5em;
+    margin-left: 2em;
+    background-color: lightblue;
+    text-align: right;
+  }
+}
+
+
+
+
+
+
+.footer{
+  bottom: 0;
+  height: 250px;
+  width: 100%;
+  background-color: grey;
+  display: block;
+  position: fixed;
+}
+.formInput{
+  padding: 1em;
+  display: block;
+  .userInput{
+    font-size: 5em;
+
+  }
+}
+.api{
+  font-size: 5em;
+}
