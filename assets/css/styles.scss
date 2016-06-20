@@ -41,14 +41,16 @@ body{
   font-size: 5em;
   margin: .5em;
   .bot{
-    border-radius: 10px;
+    border-radius: 25px;
+    padding: .5em;
     margin: .5em;
     margin-right: 2em;
     background-color: lightblue;
     text-align: left;
   }
   .bro{
-    border-radius: 10px;
+    border-radius: 25px;
+    padding: .5em;
     margin: .5em;
     margin-left: 2em;
     background-color: lightblue;
@@ -63,20 +65,26 @@ body{
 
 .footer{
   bottom: 0;
-  height: 250px;
+  height: 300px;
   width: 100%;
   background-color: grey;
   display: block;
   position: fixed;
 }
 .formInput{
-  padding: 1em;
+  padding: 1.5em;
   display: block;
   .userInput{
     font-size: 5em;
-
+    border-radius: 25px;
   }
 }
 .api{
   font-size: 5em;
+  color: white;
+  background: darkgrey;
+  padding: .2em;
+  margin: 0 .5em;
+  border: 3px solid white;
+  border-radius: 25px;
 }
