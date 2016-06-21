@@ -76,6 +76,8 @@ body {
     padding: 1em; }
 
 #chatbox {
+  height: 26em;
+  overflow-y: auto;
   font-family: arial;
   font-size: 3em;
   margin: .5em; }

@@ -13,6 +13,8 @@ var options = {'@weather': '1) grab the "@weather"',
     var help = '@help';
     console.log(request);
 
+    $('#chatbox').animate({scrollTop: $('#chatbox').prop("scrollHeight")}, 500);
+
 
 //UNDER CONSTRUCTION
     if(request == help){
