@@ -15,35 +15,38 @@ body {
 .header {
   width: 100%;
   height: 250px;
-  background-color: lightblue;
+  background-color: #adbce6;
   display: block;
   top: 0;
   position: fixed; }
   .header h2 {
+    color: white;
     margin-top: 0.3em;
     font-weight: 700;
     font-size: 10em; }
 
 .middle {
-  margin-top: 300px; }
+  margin: 300px 0 350px; }
 
 #chatbox {
   font-family: verdana;
-  font-size: 5em;
+  font-size: 3em;
   margin: .5em; }
   #chatbox .bot {
+    color: #6d6d6d;
     border-radius: 25px;
     padding: .5em;
     margin: .5em;
     margin-right: 2em;
-    background-color: lightblue;
+    background-color: #d4dcf2;
     text-align: left; }
   #chatbox .bro {
+    color: #6d6d6d;
     border-radius: 25px;
     padding: .5em;
     margin: .5em;
     margin-left: 2em;
-    background-color: lightblue;
+    background-color: #d4dcf2;
     text-align: right; }
 
 .footer {
@@ -55,19 +58,44 @@ body {
   position: fixed; }
 
 .formInput {
-  padding: 1.5em;
+  background-color: white;
   display: block; }
   .formInput .userInput {
-    font-size: 5em;
-    border-radius: 25px; }
+    width: 80%;
+    font-size: 4em;
+    border: none; }
+    .formInput .userInput:focus {
+      outline: none; }
+
+.btm_buttons {
+  margin: 2.5em; }
+
+#question {
+  float: left;
+  font-size: 4em;
+  color: darkgrey;
+  background: transparent;
+  border: 2px dotted white;
+  display: inline-block;
+  padding: 0px 20px 0px 15px; }
+
+#send {
+  float: right;
+  font-size: 4em;
+  color: darkgrey;
+  background: transparent;
+  border: none;
+  display: inline-block;
+  padding: 5px 10px 0px 0px; }
 
 .api {
-  font-size: 5em;
+  font-size: 9em;
   color: white;
-  background: darkgrey;
-  padding: .2em;
-  margin: 0 .5em;
-  border: 3px solid white;
-  border-radius: 25px; }
+  background: transparent;
+  padding: 0.2em 0.2em;
+  margin: -0.3em 0em;
+  border: none; }
+  .api i {
+    padding: 0 8px; }
 
 /*# sourceMappingURL=styles.css.map */

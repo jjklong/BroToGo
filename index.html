@@ -5,6 +5,7 @@
     <link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel = "stylesheet" href = "assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" type="text/css" href="assets/bro_font/flaticon.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <title>BroToGo</title>
@@ -15,11 +16,16 @@
     <div class="header">
       <h2>BroToGo</h2>
     </div>
+
 <!-- CHAT BOX -->
     <div class="middle">
+  <!-- MODAL -->
+      <div class="helpModal">
+
+      </div>
       <ul id="chatbox">
         <li class="bot">bot</li>
-        <li class="bro">bro</li>
+        <li class="bro">jordbro</li>
       </ul>
     </div>
 
@@ -28,12 +34,17 @@
 <!-- FOOTER -->
     <div class="footer">
       <form class="formInput" action="index.html" method="post">
+        <button id="question"type="button" name="button"><i class="fa fa-question" aria-hidden="true"></i></button>
         <input class="userInput" type="text" name="name" value="">
+        <button id="send" type="button" name="button"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
       </form>
-      <button class="api" type="button" name="button"><i class="flaticon-foursquare"></i></button>
-      <button class="api" type="button" name="button"><i class="flaticon-beer"></i></button>
-      <button class="api" type="button" name="button"><i class="flaticon-cloudy-day-weather-outlined-symbol-of-interface"></i></button>
-      <button class="api" type="button" name="button"><i class="flaticon-video-player"></i></button>
+
+      <div class="btm_buttons">
+        <button class="api" type="button" name="button"><i class="flaticon-foursquare"></i></button>
+        <button class="api" type="button" name="button"><i class="flaticon-beer"></i></button>
+        <button class="api" type="button" name="button"><i class="flaticon-cloudy-day-weather-outlined-symbol-of-interface"></i></button>
+        <button class="api" type="button" name="button"><i class="flaticon-video-player"></i></button>
+      </div>
     </div>
     <script type="text/javascript" src="assets/js/brotogo.js">
 
