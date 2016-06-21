@@ -58,7 +58,9 @@ body{
   }
 }
 #chatbox{
-  font-family: verdana;
+  font-family: 'Andale Mono Regular';
+  height: 26em;
+  overflow-y: auto;
   font-size: 3em;
   margin: .5em;
   .bot{

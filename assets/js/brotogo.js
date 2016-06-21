@@ -13,7 +13,7 @@ var options = {'@weather': '1) grab the "@weather"',
     var help = '@help';
     console.log(request);
 
-
+$("#chatbox").animate({ scrollTop: $("#chatbox").prop("scrollHeight")}, 500);
 //UNDER CONSTRUCTION
     if(request == help){
       console.log(options); //check to see if @help returns options
@@ -55,10 +55,11 @@ var options = {'@weather': '1) grab the "@weather"',
     e.preventDefault();
     $('.userInput').val('@weather');
   });
-  $('#movies').click(function(e){
+  $('#concerts').click(function(e){
     e.preventDefault();
-    $('.userInput').val('@movies');
+    $('.userInput').val('@concert');
   });
+
 
 
 

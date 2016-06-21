@@ -14,11 +14,19 @@ console.log(food);
   // context: document.body
 }).success(function foodz(x) {
   var foodzResults = "";
+  var foodzPhone = "";
+  var foodzAddress = "";
+
   console.log(x);
 for (b=0; b<5; b++){
 foodzResults = x.response.venues[b].name;
-    $('#chatbox').append('<li class="bot">' + foodzResults  + '</li>');
-    console.log(foodzResults);
+foodzPhone = x.response.venues[b].contact.formattedPhone;
+foodzAddress = x.response.venues[b].location.address;
+foodzCity = x.response.venues[b].location.city;
+foodzPostal = x.response.venues[b].location.postalCode;
+foodzUrl = x.response.venues[b].url;
+    $('#chatbox').append('<li class="bot"> <a href="' + foodzUrl +'">'  + foodzResults  + ('<br/>') +  foodzPhone + ('<br/>') + foodzAddress + ('<br/>') + foodzCity  + ('&nbsp') +  foodzPostal + '</li>');
+    console.log(x);
 
 
   // else if(request.length){

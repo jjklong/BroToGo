@@ -4,7 +4,7 @@ $('.formInput').submit(function(e){
   var request = $('.userInput').val(); //detects the value of the input
   var beer = '@beer';
   console.log(request);
-
+if (request.startsWith(beer)===true){
   var city = request.replace(beer,"");
   console.log(city);
 
@@ -20,4 +20,5 @@ $('.formInput').submit(function(e){
       }
     }
   });
+}
 });

@@ -48,7 +48,9 @@ body {
     padding: 1em; }
 
 #chatbox {
-  font-family: verdana;
+  font-family: 'Andale Mono Regular';
+  height: 26em;
+  overflow-y: auto;
   font-size: 3em;
   margin: .5em; }
   #chatbox .bot {
@@ -91,8 +93,6 @@ body {
 .btm_buttons {
   margin: 1.5em;
   border: none; }
-  .btm_buttonsbutton:focus {
-    outline: none; }
 
 #question {
   float: left;
