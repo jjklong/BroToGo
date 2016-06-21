@@ -14,10 +14,13 @@ var options = {'@weather': '1) grab the "@weather"',
     console.log(request);
 
 
-
+//UNDER CONSTRUCTION
     if(request == help){
       console.log(options); //check to see if @help returns options
       $('#chatbox').append('<li class="bot">' + options['@weather'] + '<br>' + options['@beer'] + '</li>');
+    }
+    else if(request == '@foursquare' || '@beer' || '@weather' || '@movies'){
+      $('#chatbox').append('<li class="bot">' + 'sry...this feature under construction' + '</li>');
     }
     else if(request.length){
       $('#chatbox').append('<li class="bro">' + request + '</li>');
@@ -27,11 +30,34 @@ var options = {'@weather': '1) grab the "@weather"',
       }, 1000);
     }
 
+
   });
 
+  var counter = 0;
   $('#question').click(function(e){
+    counter++;
     e.preventDefault();
-    $('.helpModal').css('display','flex');
+    $('#modal_ul').css('display','block');
+    if (counter%2===0){
+      $('#modal_ul').css('display','none');
+    }
+  });
+
+  $('#foursquare').click(function(e){
+    e.preventDefault();
+    $('.userInput').val('@fourquare');
+  });
+  $('#beer').click(function(e){
+    e.preventDefault();
+    $('.userInput').val('@beer');
+  });
+  $('#weather').click(function(e){
+    e.preventDefault();
+    $('.userInput').val('@weather');
+  });
+  $('#movies').click(function(e){
+    e.preventDefault();
+    $('.userInput').val('@movies');
   });
 
 
