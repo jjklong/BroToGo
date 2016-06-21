@@ -19,11 +19,39 @@ body {
   display: block;
   top: 0;
   position: fixed; }
+  .header #weatherIcon {
+    padding: .75em;
+    font-size: 100px;
+    left: 0em;
+    color: white;
+    position: absolute; }
+  .header #tempF {
+    padding: .75em 1em;
+    font-size: 100px;
+    right: 0em;
+    top: 0;
+    color: white;
+    position: absolute; }
+  .header #tempIcon {
+    display: none;
+    padding: 4em 3em;
+    font-size: 20px;
+    right: 0em;
+    top: 0;
+    color: white;
+    position: absolute; }
+    .header #tempIcon span {
+      font-family: 'Reenie Beanie', cursive;
+      font-size: 50px;
+      vertical-align: middle; }
   .header h2 {
     color: white;
     margin-top: 0.3em;
     font-weight: 700;
     font-size: 10em; }
+  .header a {
+    color: #eee;
+    font-size: 3em; }
 
 .middle {
   margin: 300px 0 350px; }
@@ -48,7 +76,7 @@ body {
     padding: 1em; }
 
 #chatbox {
-  font-family: verdana;
+  font-family: arial;
   font-size: 3em;
   margin: .5em; }
   #chatbox .bot {
@@ -91,8 +119,6 @@ body {
 .btm_buttons {
   margin: 1.5em;
   border: none; }
-  .btm_buttonsbutton:focus {
-    outline: none; }
 
 #question {
   float: left;
