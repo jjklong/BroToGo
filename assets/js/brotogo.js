@@ -55,9 +55,9 @@ var options = {'@weather': '1) grab the "@weather"',
     e.preventDefault();
     $('.userInput').val('@weather');
   });
-  $('#movies').click(function(e){
+  $('#concerts').click(function(e){
     e.preventDefault();
-    $('.userInput').val('@movies');
+    $('.userInput').val('@concert');
   });
 
 
