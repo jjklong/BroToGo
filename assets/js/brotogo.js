@@ -45,7 +45,7 @@ var options = {'@weather': '1) grab the "@weather"',
 
   $('#foursquare').click(function(e){
     e.preventDefault();
-    $('.userInput').val('@fourquare');
+    $('.userInput').val('@foursquare');
   });
   $('#beer').click(function(e){
     e.preventDefault();

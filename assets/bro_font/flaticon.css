@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 20/06/2016 21:44
+  	Creation date: 21/06/2016 16:37
   	*/
 
 @font-face {
@@ -26,10 +26,10 @@
   font-family: Flaticon;
         font-size: 1em;
 font-style: normal;
-/*margin-left: 10px;*/
+/*margin-left: 20px;*/
 }
 
 .flaticon-beer:before { content: "\f100"; }
-.flaticon-cloudy-day-weather-outlined-symbol-of-interface:before { content: "\f101"; }
+.flaticon-cloud:before { content: "\f101"; }
 .flaticon-foursquare:before { content: "\f102"; }
-.flaticon-video-player:before { content: "\f103"; }
+.flaticon-music-player:before { content: "\f103"; }
