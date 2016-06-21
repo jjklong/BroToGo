@@ -37,6 +37,26 @@ body{
 .middle{
   margin: 300px 0 350px;
 }
+#modal_ul{
+  display: none;
+  color: #6d6d6d;
+  width: 100%;
+  position: absolute;
+  font-size: 2.5em;
+  font-family: verdana;
+  text-align: left;
+  background: #adbce6;
+  padding: 3em 1em;
+  margin: 0em;
+  height: 100%;
+  line-height: 2em;
+  li{
+    background-color:#d4dcf2;
+    line-height: 1em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
 #chatbox{
   font-family: verdana;
   font-size: 3em;
@@ -77,10 +97,12 @@ body{
 .formInput{
   background-color: white;
   display: block;
+  padding: 1em;
   .userInput{
     width: 80%;
     font-size: 4em;
     border: none;
+    color: #6d6d6d;
     &:focus{
       outline: none;
     }
@@ -89,7 +111,8 @@ body{
 
 //BUTTONS
 .btm_buttons{
-  margin: 2.5em;
+  margin: 1.5em;
+  border: none;
 }
 #question{
   float: left;
