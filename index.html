@@ -11,10 +11,13 @@
     <title>BroToGo</title>
   </head>
   <body>
+    <div class="wrapper">
 
 <!-- HEADER     -->
     <div class="header">
+      <i id="weatherIcon" class="fa " aria-hidden="true"></i>
       <h2>BroToGo</h2>
+      <span id="tempF"></span><i id="tempIcon" class="fa fa-genderless" aria-hidden="true"><span>F</span></i>
     </div>
 
 <!-- CHAT BOX -->
@@ -50,9 +53,8 @@
         <button id="concerts" class="api" type="button" name="button"><i class="flaticon-music-player"></i></button>
       </div>
     </div>
-    <script type="text/javascript" src="assets/js/brotogo.js">
-
-    </script>
+  </div>
+    <script type="text/javascript" src="assets/js/brotogo.js"></script>
     <!-- Commented out Jambase to prevent unecessary calls until we get other APIs mapped.  Jambase allows only 50 calls per day. -->
     <script type="text/javascript" src="assets/js/jambase.js"></script>
     <script type="text/javascript" src="assets/js/foursquare.js"></script>
