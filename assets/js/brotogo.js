@@ -28,8 +28,6 @@ var options = {'@foursquare': '@foursquare: CITY,ST + ANYTHING',
         $('#chatbox').append('<li class="bot">' + 'whoaa...sah brah!' + '</li>');
       }, 1000);
     }
-
-
   });
 
   var counter = 0;
@@ -58,17 +56,4 @@ var options = {'@foursquare': '@foursquare: CITY,ST + ANYTHING',
     e.preventDefault();
     $('.userInput').val('@concert');
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
