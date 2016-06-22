@@ -4,14 +4,13 @@ var query = $('input[name="name"]').val();
 var foursquare = '@foursquare';
 console.log(query);
 if(query.startsWith(foursquare)===true){
-var food = query.replace(foursquare,"");
+var info = query.replace(foursquare,"");
+var split = info.split(" ");
 
-console.log(food);
+console.log(split);
 
   $.ajax({
-    url: 'https://api.foursquare.com/v2/venues/search?client_id=XQHMSQWC4DRADZCVUDZMHSL0O4K4OZ2JYSZYSALZMDPQIKFF&client_secret=2RKEMUUKYNDCPMUUQWRDZZLGLMVWY23NPHCGYSUGQIM4C1M1&v=20130815&ll=35.9940,-78.8986&query= ' + food,
-
-  // context: document.body
+    url: 'https://api.foursquare.com/v2/venues/search?client_id=XQHMSQWC4DRADZCVUDZMHSL0O4K4OZ2JYSZYSALZMDPQIKFF&client_secret=2RKEMUUKYNDCPMUUQWRDZZLGLMVWY23NPHCGYSUGQIM4C1M1&v=20130815&near='+split[1]+'&query= ' + split[2],
 }).success(function foodz(x) {
   var foodzResults = "";
   var foodzPhone = "";

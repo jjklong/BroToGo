@@ -3,10 +3,10 @@ $(function strict(){
 // 1) SELECT INPUT
 // 2) DETERMINE TEXT INPUT
 // 3) APPEND TEXT TO NEW LIST ITEM (assign appropriate class for bot and bro)
-var options = {'@foursquare': '@foursquare: ZIPCODE',
+var options = {'@foursquare': '@foursquare: CITY,ST + ANYTHING',
                 '@beer': '@beer: CITY',
                 '@sky': '@sky: CITY',
-                '@concert': '@concert: CITY'};
+                '@concert': '@concert: ZIPCODE'};
   $('.formInput').submit(function(e){
     e.preventDefault();
 
@@ -17,16 +17,16 @@ var options = {'@foursquare': '@foursquare: ZIPCODE',
 
 //Used http://jsfiddle.net/5ucD3/461/ to help understand this animation method
     $('#chatbox').animate({scrollTop: $('#chatbox').prop("scrollHeight")}, 500);
+    $('#chatbox').append('<li class="bro">' + request + '</li>');
+    $('.userInput').val("");
 
     if(request == help){
       $('#chatbox').append('<li class="bot">' + options['@foursquare'] + '<br>' + options['@beer'] + '<br>' + options['@sky']+ '<br>' + options['@concert'] + '</li>');
     }
-    else if(request.length){
-      $('#chatbox').append('<li class="bro">' + request + '</li>');
-      $('.userInput').val("");
-      // setTimeout(function botreply(){
-      //   $('#chatbox').append('<li class="bot">' + 'Im old greg' + '</li>');
-      // }, 1000);
+    if(request == 'hey'){
+      setTimeout(function botreply(){
+        $('#chatbox').append('<li class="bot">' + 'whoaa...sah brah!' + '</li>');
+      }, 1000);
     }
 
 
