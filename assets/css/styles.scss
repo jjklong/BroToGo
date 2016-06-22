@@ -29,22 +29,22 @@ body{
 }
 
 
-// @media (max-width:767px){
 .header{
   @include span(12);
   background-color: #adbce6;
+  font-size: .6em;
   top: 0;
   position: fixed;
   #weatherIcon{
     padding: .75em;
-    font-size: 100px;
+    font-size: 6em;
     left: 0em;
     color: white;
     position: absolute;
   }
   #tempF{
     padding: .75em 1em;
-    font-size: 100px;
+    font-size: 6em;
     right: 0em;
     top: 0;
     color: white;
@@ -53,7 +53,7 @@ body{
   #tempIcon{
     display: none;
     padding: 4em 3em;
-    font-size: 20px;
+    font-size: 1em;
     right: 0em;
     top: 0;
     color: white;
@@ -150,8 +150,9 @@ body{
 
 
 .footer{
+  font-size: .6em;
   bottom: 0;
-  height: 300px;
+  height: 20em;
   width: 100%;
   background-color: grey;
   display: block;
@@ -174,8 +175,9 @@ body{
 
 //BUTTONS
 .btm_buttons{
-  margin: 1.5em;
+  margin: 2em 0em;
   border: none;
+
 }
 #question{
   float: left;
@@ -207,4 +209,36 @@ body{
     padding: 0 8px;
   }
 }
-// }
+
+@media screen and (min-width:1200px) {
+    .header{
+      font-size: .5em;
+    }
+    .footer{
+      font-size: .5em;
+    }
+}
+@media screen and (min-width:550px) and (max-width: 1200px) {
+    .header{
+      font-size: .5em;
+    }
+    .footer{
+      font-size: .6em;
+    }
+    .btm_buttons{
+      margin: 4em 0;
+      font-size: .75em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .header{
+      font-size: .5em;
+    }
+    .footer{
+      font-size: .5em;
+    }
+    .btm_buttons{
+      margin: 4em 0;
+      font-size: .5em;
+    }
+}
