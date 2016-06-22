@@ -2,12 +2,12 @@ $('.formInput').submit(function(e){
   e.preventDefault();
 
   var request = $('.userInput').val(); //detects the value of the input
-  var beer = '@beer';
+  var sky = '@sky';
   var latitude = "";
   var longitude = "";
   console.log(request);
-  if (request.startsWith(beer)===true){
-    var city = request.replace(beer,"");
+  if (request.startsWith(sky)===true){
+    var city = request.replace(sky,"");
     console.log(city);
 
     var capCITY = city.toUpperCase();
@@ -16,25 +16,13 @@ $('.formInput').submit(function(e){
       url: 'https://api.brewerydb.com/v2/locations/?locality=' + city + '&key=905415c2a8c587c6f31b9eef1f71b4c0&format=json',
       success: function brewCity(user){
         var breweryResults = "";
-        var breweryAddress = "";
-        var brewIcon = "";
 
+          latitude = user.data[0].latitude;
+          longitude = user.data[0].longitude;
+          city = user.data[0].locality;
+          state = user.data[0].region;
+          $('#chatbox').append('<li class="bot cityST">' + city + ', ' + state + '</li>');
 
-        latitude = user.data[0].latitude;
-        longitude = user.data[0].longitude;
-        console.log(latitude);
-        console.log(longitude);
-
-        console.log(user);
-        for (b=0;b<=5;b++){
-          breweryResults = user.data[b].brewery.name;
-          breweryAddress = user.data[b].streetAddress;
-          brewIcon = user.data[b].brewery.images.icon;
-          console.log(breweryResults);
-          $('#chatbox').append('<li class="bot cityST">' + breweryResults + '</li>');
-          $('#chatbox').append('<li class="bot weatherSum">' + breweryAddress + '</li>');
-          $('#chatbox').append('<li class="bot weatherSum">' + '<img src="'+ brewIcon + '" alt="" />' + '</li>');
-        }
 
         $.ajax({
           url: 'https://api.forecast.io/forecast/77f5b9251d4b7d953c5e1f816e7f027b/' + latitude + ',' + longitude,
@@ -45,6 +33,7 @@ $('.formInput').submit(function(e){
             summary=ll.hourly.summary;
             $('#tempF').html(Math.round(temp));
             $('#tempIcon').css('display','initial');
+            $('#chatbox').append('<li class="bot weatherSum">' + summary + '</li>');
 
 //detect SUN, RAIN, CLOUD, OR STORM IN THE AJAX RETURN FOR THE icon information from dark sky:
 // if, else statement to determine icon
