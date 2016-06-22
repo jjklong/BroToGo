@@ -30,12 +30,12 @@ $('.formInput').submit(function(e){
         for (b=0;b<=5;b++){
           breweryResults = user.data[b].brewery.name;
           breweryAddress = user.data[b].streetAddress;
-            brewIcon = user.data[b].brewery.images.icon;
-            $('#chatbox').append('<li class="bot weatherSum">' + '<a href="'+brewUrl+'">' + '<img src="'+ brewIcon + '" alt="" />'  + '</a>' + '</li>');
+          brewDesc = user.data[b].brewery.description;
           brewUrl = user.data[b].brewery.website;
           console.log(breweryResults);
-          $('#chatbox').append('<li class="bot cityST">' + breweryResults + '</li>');
-          $('#chatbox').append('<li class="bot weatherSum">' + breweryAddress + '</li>');
+          $('#chatbox').append('<li class="breweryResults bot">' + breweryResults + '</li>');
+          $('#chatbox').append('<li class="breweryAddress bot">' + breweryAddress + '</li>');
+          $('#chatbox').append('<li class="brewDesc bot">' + '<a href="'+brewUrl+'">' + '<p>' + brewDesc + '<p/>'  + '</a>' + '</li>');
         }
 
         $.ajax({
