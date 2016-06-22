@@ -26,7 +26,11 @@ body {
 .header {
   width: 100%;
   float: left;
+<<<<<<< HEAD
   background-color: #adbce6;
+=======
+  background: linear-gradient(to bottom, #aad5e8 57%, #90c7e0 100%);
+>>>>>>> 1175ee6957c870850bf7de32937debaf09b2a813
   font-size: .6em;
   top: 0;
   position: fixed; }
@@ -127,6 +131,10 @@ body {
   bottom: 0;
   height: 20em;
   width: 100%;
+<<<<<<< HEAD
+=======
+  background-color: #6d6d6d;
+>>>>>>> 1175ee6957c870850bf7de32937debaf09b2a813
   position: fixed; }
 
 .formInput {
@@ -198,6 +206,6 @@ body {
 
   .btm_buttons {
     margin: 4em 0;
-    font-size: .5em; } }
+    font-size: .75em; } }
 
 /*# sourceMappingURL=styles.css.map */

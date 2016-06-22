@@ -31,7 +31,7 @@ body{
 
 .header{
   @include span(12);
-  background-color: #adbce6;
+  background: linear-gradient(to bottom, #aad5e8 57%, #90c7e0 100%);
   font-size: .6em;
   top: 0;
   position: fixed;
@@ -151,7 +151,7 @@ body{
   bottom: 0;
   height: 20em;
   width: 100%;
-background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);  display: block;
+  background-color: #6d6d6d;
   position: fixed;
 }
 .formInput{
@@ -235,6 +235,6 @@ background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1
     }
     .btm_buttons{
       margin: 4em 0;
-      font-size: .5em;
+      font-size: .75em;
     }
 }
