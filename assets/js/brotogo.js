@@ -3,8 +3,8 @@ $(function strict(){
 // 1) SELECT INPUT
 // 2) DETERMINE TEXT INPUT
 // 3) APPEND TEXT TO NEW LIST ITEM (assign appropriate class for bot and bro)
-var options = {'@weather': '1) grab the "@weather"',
-                '@beer': '2) grab the "@beer"'};
+var options = {'@foursquare': '@foursquare: ZIPCODE',
+                '@beer': '@beer: CITY'};
   $('.formInput').submit(function(e){
     e.preventDefault();
 
@@ -13,22 +13,18 @@ var options = {'@weather': '1) grab the "@weather"',
     var help = '@help';
     console.log(request);
 
+//Used http://jsfiddle.net/5ucD3/461/ to help understand this animation method
     $('#chatbox').animate({scrollTop: $('#chatbox').prop("scrollHeight")}, 500);
 
-//UNDER CONSTRUCTION
     if(request == help){
-      console.log(options); //check to see if @help returns options
-      $('#chatbox').append('<li class="bot">' + options['@weather'] + '<br>' + options['@beer'] + '</li>');
-    }
-    else if(request == '@foursquare' || '@weather' || '@movies'){
-      $('#chatbox').append('<li class="bot">' + 'sry...this feature under construction' + '</li>');
+      $('#chatbox').append('<li class="bot">' + options['@foursquare'] + '<br>' + options['@beer'] + '</li>');
     }
     else if(request.length){
       $('#chatbox').append('<li class="bro">' + request + '</li>');
       $('.userInput').val("");
-      setTimeout(function botreply(){
-        $('#chatbox').append('<li class="bot">' + 'Im old greg' + '</li>');
-      }, 1000);
+      // setTimeout(function botreply(){
+      //   $('#chatbox').append('<li class="bot">' + 'Im old greg' + '</li>');
+      // }, 1000);
     }
 
 
@@ -54,7 +50,7 @@ var options = {'@weather': '1) grab the "@weather"',
   });
   $('#weather').click(function(e){
     e.preventDefault();
-    $('.userInput').val('@weather');
+    $('.userInput').val('@sky');
   });
   $('#concerts').click(function(e){
     e.preventDefault();

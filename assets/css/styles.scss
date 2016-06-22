@@ -1,3 +1,16 @@
+@import "../../bower_components/susy/sass/susy";
+$susy: (
+  columns: 12,
+  container: 1120px,
+  gutter-position: split,
+  global-box-sizing: border-box,
+  gutters: 0
+  );
+
+.wrapper{
+  @include container;
+  @include span(12);
+}
 * {
     box-sizing: border-box;
 }
@@ -15,11 +28,11 @@ body{
   font-family: 'Reenie Beanie', cursive;
 }
 
+
+// @media (max-width:767px){
 .header{
-  width: 100%;
-  height: 250px;
+  @include span(12);
   background-color: #adbce6;
-  display: block;
   top: 0;
   position: fixed;
   #weatherIcon{
@@ -54,6 +67,7 @@ body{
   h2{
     color: white;
     margin-top: 0.3em;
+    margin-bottom: .1em;
     font-weight: 700;
     font-size: 10em;
   }
@@ -68,7 +82,9 @@ body{
 
 
 .middle{
-  margin: 300px 0 350px;
+  @include span(12);
+  padding-top: 12em;
+  // margin: 300px 0 350px;
 }
 #modal_ul{
   display: none;
@@ -91,11 +107,11 @@ body{
   }
 }
 #chatbox{
-  height: 26em;
+  height: 24em;
   overflow-y: auto;
   font-family: arial;
   font-size: 3em;
-  margin: .5em;
+  margin-top: .5em;
   .bot{
     color: #6d6d6d;
     border-radius: 25px;
@@ -104,6 +120,14 @@ body{
     margin-right: 2em;
     background-color: #d4dcf2;
     text-align: left;
+  }
+  .cityST{
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  .weatherSum{
+    font-size: .5em;
+    font-weight: 300;
   }
   .bro{
     color: #6d6d6d;
@@ -179,3 +203,4 @@ body{
     padding: 0 8px;
   }
 }
+// }

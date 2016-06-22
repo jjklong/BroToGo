@@ -1,3 +1,14 @@
+.wrapper {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left; }
+  .wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
 * {
   box-sizing: border-box; }
 
@@ -14,9 +25,8 @@ body {
 
 .header {
   width: 100%;
-  height: 250px;
+  float: left;
   background-color: #adbce6;
-  display: block;
   top: 0;
   position: fixed; }
   .header #weatherIcon {
@@ -47,6 +57,7 @@ body {
   .header h2 {
     color: white;
     margin-top: 0.3em;
+    margin-bottom: .1em;
     font-weight: 700;
     font-size: 10em; }
   .header a {
@@ -54,7 +65,9 @@ body {
     font-size: 3em; }
 
 .middle {
-  margin: 300px 0 350px; }
+  width: 100%;
+  float: left;
+  padding-top: 12em; }
 
 #modal_ul {
   display: none;
@@ -76,11 +89,11 @@ body {
     padding: 1em; }
 
 #chatbox {
-  height: 26em;
+  height: 24em;
   overflow-y: auto;
   font-family: arial;
   font-size: 3em;
-  margin: .5em; }
+  margin-top: .5em; }
   #chatbox .bot {
     color: #6d6d6d;
     border-radius: 25px;
@@ -89,6 +102,12 @@ body {
     margin-right: 2em;
     background-color: #d4dcf2;
     text-align: left; }
+  #chatbox .cityST {
+    font-weight: 700;
+    font-size: 1.1em; }
+  #chatbox .weatherSum {
+    font-size: .5em;
+    font-weight: 300; }
   #chatbox .bro {
     color: #6d6d6d;
     border-radius: 25px;
