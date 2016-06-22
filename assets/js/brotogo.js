@@ -20,15 +20,15 @@ var options = {'@weather': '1) grab the "@weather"',
       console.log(options); //check to see if @help returns options
       $('#chatbox').append('<li class="bot">' + options['@weather'] + '<br>' + options['@beer'] + '</li>');
     }
-    else if(request == '@foursquare' || '@weather' || '@movies'){
-      $('#chatbox').append('<li class="bot">' + 'sry...this feature under construction' + '</li>');
-    }
+    // else if(request == '@foursquare' || '@weather' || '@movies'){
+    //   $('#chatbox').append('<li class="bot">' + 'sry...this feature under construction' + '</li>');
+    // }
     else if(request.length){
       $('#chatbox').append('<li class="bro">' + request + '</li>');
       $('.userInput').val("");
-      setTimeout(function botreply(){
-        $('#chatbox').append('<li class="bot">' + 'Im old greg' + '</li>');
-      }, 1000);
+      // setTimeout(function botreply(){
+      //   $('#chatbox').append('<li class="bot">' + 'Im old greg' + '</li>');
+      // }, 1000);
     }
 
 
