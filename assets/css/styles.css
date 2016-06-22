@@ -78,11 +78,12 @@ body {
   font-family: verdana;
   text-align: left;
   background: #adbce6;
-  padding: 3em 1em;
+  padding: 2em 1em;
   margin: 0em;
   height: 100%;
   line-height: 2em; }
   #modal_ul li {
+    font-size: .75em;
     background-color: #d4dcf2;
     line-height: 1em;
     margin: 1em;
@@ -95,6 +96,7 @@ body {
   font-size: 3em;
   margin-top: .5em; }
   #chatbox .bot {
+    line-height: 1.5em;
     color: #6d6d6d;
     border-radius: 25px;
     padding: .5em;
@@ -103,9 +105,11 @@ body {
     background-color: #d4dcf2;
     text-align: left; }
   #chatbox .cityST {
+    color: #6d6d6d;
     font-weight: 700;
     font-size: 1.1em; }
   #chatbox .weatherSum {
+    color: #6d6d6d;
     font-size: .5em;
     font-weight: 300; }
   #chatbox .bro {

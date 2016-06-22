@@ -21,7 +21,7 @@ $('.formInput').submit(function(e){
           longitude = user.data[0].longitude;
           city = user.data[0].locality;
           state = user.data[0].region;
-          $('#chatbox').append('<li class="bot cityST">' + city + ', ' + state + '</li>');
+          $('#chatbox').append('<li class="cityST">' +'<div>'+ city + ', ' + state +'</div>'+ '</li>');
 
 
         $.ajax({
@@ -33,7 +33,7 @@ $('.formInput').submit(function(e){
             summary=ll.hourly.summary;
             $('#tempF').html(Math.round(temp));
             $('#tempIcon').css('display','initial');
-            $('#chatbox').append('<li class="bot weatherSum">' + summary + '</li>');
+            $('#chatbox').append('<li class="weatherSum">' + summary + '</li>');
 
 //detect SUN, RAIN, CLOUD, OR STORM IN THE AJAX RETURN FOR THE icon information from dark sky:
 // if, else statement to determine icon

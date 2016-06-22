@@ -4,7 +4,9 @@ $(function strict(){
 // 2) DETERMINE TEXT INPUT
 // 3) APPEND TEXT TO NEW LIST ITEM (assign appropriate class for bot and bro)
 var options = {'@foursquare': '@foursquare: ZIPCODE',
-                '@beer': '@beer: CITY'};
+                '@beer': '@beer: CITY',
+                '@sky': '@sky: CITY',
+                '@concert': '@concert: CITY'};
   $('.formInput').submit(function(e){
     e.preventDefault();
 
@@ -17,7 +19,7 @@ var options = {'@foursquare': '@foursquare: ZIPCODE',
     $('#chatbox').animate({scrollTop: $('#chatbox').prop("scrollHeight")}, 500);
 
     if(request == help){
-      $('#chatbox').append('<li class="bot">' + options['@foursquare'] + '<br>' + options['@beer'] + '</li>');
+      $('#chatbox').append('<li class="bot">' + options['@foursquare'] + '<br>' + options['@beer'] + '<br>' + options['@sky']+ '<br>' + options['@concert'] + '</li>');
     }
     else if(request.length){
       $('#chatbox').append('<li class="bro">' + request + '</li>');
