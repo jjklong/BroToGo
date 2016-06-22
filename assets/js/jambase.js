@@ -20,7 +20,7 @@ $('.formInput').submit(function(e){
     showCity = i.Events[b].Venue.City;
     showUrl =i.Events[b].TicketUrl;
   console.log(i);
-  $('#chatbox').append('<li class="bot"> <a href="' + showUrl +'">'  + showResults  + ('<br/>') +  showArtists + ('<br/>') + showDate  + ('<br/>') + showAddress + ('&nbsp') + showCity + '</li>');
+  $('#chatbox').append('<li class="jamBot bot"> <a href="' + showUrl +'">'  + showResults  + ('<br/>') +  showArtists + ('<br/>') + showDate  + ('<br/>') + showAddress + ('&nbsp') + showCity + '</li>');
 
 }
 });

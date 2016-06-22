@@ -25,18 +25,9 @@ body {
 
 .header {
   width: 100%;
-<<<<<<< HEAD
-  height: 250px;
-  background: linear-gradient(to bottom, #aad5e8 57%, #90c7e0 100%);
-  display: block;
-=======
   float: left;
-  background-color: #adbce6;
-<<<<<<< HEAD
->>>>>>> b015c93dd0c414a49ac5c30a5535b39ae8acbd84
-=======
+  background: linear-gradient(to bottom, #aad5e8 57%, #90c7e0 100%);
   font-size: .6em;
->>>>>>> jordtogo
   top: 0;
   position: fixed; }
   .header #weatherIcon {
@@ -87,50 +78,47 @@ body {
   font-size: 2.5em;
   font-family: verdana;
   text-align: left;
-<<<<<<< HEAD
-  background: linear-gradient(to bottom, #cfe1ef 25%, #cfe1ef 25%, #52859c 100%);
-=======
   background: #adbce6;
   padding: 2em 1em;
->>>>>>> jordtogo
   margin: 0em;
   height: 100%;
   line-height: 2em; }
   #modal_ul li {
-<<<<<<< HEAD
-    background: linear-gradient(to bottom, #cfe1ef 25%, #cfe1ef 25%, #52859c 100%);
-=======
     font-size: .75em;
     background-color: #d4dcf2;
     line-height: 1em;
->>>>>>> jordtogo
     margin: 1em;
     padding: 1em; }
 
 #chatbox {
   height: 24em;
   overflow-y: auto;
-  font-family: 'Andale Mono';
+  font-family: 'Geneva';
   text-decoration: none;
   font-size: 3em;
   margin-top: .5em; }
   #chatbox .bot {
-<<<<<<< HEAD
-    color: #515151;
-=======
     line-height: 1.5em;
     color: #6d6d6d;
->>>>>>> jordtogo
     border-radius: 25px;
     padding: .5em;
     margin: .5em;
     text-decoration: none;
     margin-right: 2em;
-<<<<<<< HEAD
-    background: linear-gradient(to bottom, #cadaea 0%, #cadaea 100%); }
-=======
     background-color: #d4dcf2;
     text-align: left; }
+  #chatbox .fourBot {
+    font-family: 'Geneva';
+    font-size: .5em; }
+    #chatbox .fourBot a {
+      text-decoration: none;
+      color: #6d6d6d; }
+  #chatbox .jamBot {
+    font-family: 'Geneva';
+    font-size: .5em; }
+    #chatbox .jamBot a {
+      text-decoration: none;
+      color: #6d6d6d; }
   #chatbox .cityST {
     color: #6d6d6d;
     font-weight: 700;
@@ -139,7 +127,6 @@ body {
     color: #6d6d6d;
     font-size: .5em;
     font-weight: 300; }
->>>>>>> b015c93dd0c414a49ac5c30a5535b39ae8acbd84
   #chatbox .bro {
     color: #515151;
     border-radius: 25px;
