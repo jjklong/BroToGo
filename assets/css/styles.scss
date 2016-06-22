@@ -7,6 +7,9 @@ $susy: (
   gutters: 0
   );
 
+$lightblue: #aad5e8;
+$blue: #90c7e0;
+
 .wrapper{
   @include container;
   @include span(12);
@@ -31,7 +34,8 @@ body{
 
 .header{
   @include span(12);
-  background: linear-gradient(to bottom, #aad5e8 57%, #90c7e0 100%);
+
+  background: linear-gradient(to bottom, $lightblue 57%, $blue 100%);
   font-size: .6em;
   top: 0;
   position: fixed;
@@ -83,46 +87,46 @@ body{
 
 .middle{
   @include span(12);
-  padding-top: 12em;
-  // margin: 300px 0 350px;
+  padding-top: 7em;
 }
 #modal_ul{
   display: none;
-  color: #a3a3a3;
+  color: #6d6d6d;
   width: 100%;
   position: absolute;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: verdana;
   text-align: left;
-  background: #adbce6;
-  padding: 2em 1em;
+  background: #eee;
+  padding: 1em;
   margin: 0em;
   height: 100%;
-  line-height: 2em;
   li{
     font-size: .75em;
-    background-color:#d4dcf2;
-    line-height: 1em;
+    background-color: #eee;
+    line-height: .9em;
     margin: 1em;
     padding: 1em;
   }
 }
 #chatbox{
-  height: 24em;
+  padding: 0 1em 1em 1em;
+  margin-bottom: 6em;
   overflow-y: auto;
   font-family: 'Geneva';
   text-decoration: none;
-  font-size: 3em;
-  margin-top: .5em;
+  font-size: 2em;
   .bot{
-    line-height: 1.5em;
+    float: left;
+    display: inline-block;
+    font-size: .9em;
     color: #6d6d6d;
     border-radius: 25px;
     padding: .5em;
     margin: .5em;
     text-decoration: none;
-    margin-right: 2em;
-    background-color: #d4dcf2;
+    margin-right: 50%;
+    background-color: $lightblue;
     text-align: left;
   }
   .fourBot{
@@ -147,19 +151,59 @@ body{
     color: #6d6d6d;
     font-weight: 700;
     font-size: 1.1em;
+    div{
+      margin: 0;
+      padding: .5em;
+      text-align: left;
+    }
   }
   .weatherSum{
+    margin: 0;
+    padding: 0 2em;
     color: #6d6d6d;
     font-size: .5em;
     font-weight: 300;
+    text-align: left;
   }
   .bro{
+    float: right;
+    display: inline-block;
+    font-size: .9em;
     color: #515151;
     border-radius: 25px;
     padding: .5em;
     margin: .5em;
-    margin-left: 2em;
-    background: linear-gradient(to bottom, rgba(202,218,234,1) 0%,rgba(202,218,234,1) 100%);
+    margin-left: 50%;
+    background-color: $lightblue;
+    text-align: right;
+  }
+  .breweryResults{
+    border-radius: 5%;
+    border-bottom: 3px solid grey;
+    margin-bottom: .5em;
+    padding: .5em;
+    font-size: 1em;
+    text-align: left;
+    background: none;
+  }
+  .breweryAddress{
+    @extend .breweryResults;
+    border: none;
+    padding: 0 1em;
+    font-size: .75em;
+  }
+  .brewDesc{
+    @extend .breweryResults;
+    border: none;
+    padding: 0 1.5em;
+    font-size: .5em;
+    a{
+      text-decoration: none;
+      p{
+        text-decoration: none;
+        color: #6d6d6d;
+      }
+    }
   }
 }
 
@@ -169,7 +213,7 @@ body{
   bottom: 0;
   height: 20em;
   width: 100%;
-background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);  display: block;
+  background-color: #6d6d6d;
   position: fixed;
 }
 .formInput{
@@ -244,7 +288,7 @@ background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1
       font-size: .75em;
     }
 }
-@media screen and (max-width: 550px) {
+@media screen and (min-width:380px) and (max-width: 550px) {
     .header{
       font-size: .5em;
     }
@@ -253,6 +297,15 @@ background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1
     }
     .btm_buttons{
       margin: 4em 0;
-      font-size: .5em;
+      font-size: .75em;
     }
+}
+@media screen and (max-width:380px) {
+  .footer{
+    font-size: .4em;
+  }
+  .btm_buttons{
+    margin: 4em 0;
+    font-size: .7em;
+  }
 }
