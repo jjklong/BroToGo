@@ -126,7 +126,7 @@ body {
     margin: .5em;
     text-decoration: none;
     margin-right: 50%;
-    background-color: #aad5e8;
+    background-color: rgba(170, 213, 232, 0.5);
     text-align: left; }
   #chatbox .cityST {
     border-radius: 5%;
@@ -154,7 +154,7 @@ body {
     padding: .5em;
     margin: .5em;
     margin-left: 50%;
-    background-color: #aad5e8;
+    background-color: rgba(170, 213, 232, 0.5);
     text-align: right; }
   #chatbox .breweryResults, #chatbox .breweryAddress, #chatbox .brewDesc {
     border-radius: 5%;

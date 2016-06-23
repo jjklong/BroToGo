@@ -9,6 +9,7 @@ $susy: (
 
 $lightblue: #aad5e8;
 $blue: #90c7e0;
+$chat: rgba(170,213,232,0.5);
 
 .wrapper{
   @include container;
@@ -149,7 +150,7 @@ body{
     margin: .5em;
     text-decoration: none;
     margin-right: 50%;
-    background-color: $lightblue;
+    background-color: $chat;
     text-align: left;
   }
   .cityST{
@@ -180,7 +181,7 @@ body{
     padding: .5em;
     margin: .5em;
     margin-left: 50%;
-    background-color: $lightblue;
+    background-color: $chat;
     text-align: right;
   }
   .breweryResults{
