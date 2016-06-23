@@ -17,21 +17,16 @@ console.log(split);
   var foodzAddress = "";
 
   console.log(x);
-for (b=0; b<5; b++){
-foodzResults = x.response.venues[b].name;
-foodzPhone = x.response.venues[b].contact.formattedPhone;
-foodzAddress = x.response.venues[b].location.address;
-foodzCity = x.response.venues[b].location.city;
-foodzPostal = x.response.venues[b].location.postalCode;
-foodzUrl = x.response.venues[b].url;
-    $('#chatbox').append('<li class="bot"> <a href="' + foodzUrl +'">'  + foodzResults  + ('<br/>') +  foodzPhone + ('<br/>') + foodzAddress + ('<br/>') + foodzCity  + ('&nbsp') +  foodzPostal + '</li>');
-    console.log(x);
-
-
-  // else if(request.length){
-  //   $('#chatbox').append('<li class="bro">' + request + '</li>');
-  //   $('.userInput').val("");
-}
+    for (b=0; b<5; b++){
+    foodzResults = x.response.venues[b].name;
+    foodzPhone = x.response.venues[b].contact.formattedPhone;
+    foodzAddress = x.response.venues[b].location.address;
+    foodzCity = x.response.venues[b].location.city;
+    foodzPostal = x.response.venues[b].location.postalCode;
+    foodzUrl = x.response.venues[b].url;
+        $('#chatbox').append('<li class="bot"> <a href="' + foodzUrl +'">'  + foodzResults  + ('<br/>') +  foodzPhone + ('<br/>') + foodzAddress + ('<br/>') + foodzCity  + ('&nbsp') +  foodzPostal + '</li>');
+        console.log(x);
+    }
   });
 
 }
