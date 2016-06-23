@@ -147,6 +147,21 @@ body{
     }
   }
 
+  .travBot{
+    float: left;
+    display: inline-block;
+    font-family: 'Geneva';
+    font-size: .9em;
+    color: #6d6d6d;
+    border-radius: 25px;
+    padding: .5em;
+    margin: .5em;
+    text-decoration: none;
+    margin-right: 50%;
+    background-color: $lightblue;
+    text-align: left;
+  }
+
   .cityST{
     color: #6d6d6d;
     font-weight: 700;
