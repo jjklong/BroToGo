@@ -78,24 +78,14 @@ body {
   font-size: 2em;
   font-family: verdana;
   text-align: left;
-<<<<<<< HEAD
-  background: #adbce6;
-  padding: 2em 1em;
-=======
   background: #eee;
   padding: 1em;
->>>>>>> ef58555f1d226c1dc306cca392d83b9351ebd61e
   margin: 0em;
   height: 100%; }
   #modal_ul li {
     font-size: .75em;
-<<<<<<< HEAD
-    background-color: #d4dcf2;
-    line-height: 1em;
-=======
     background-color: #eee;
     line-height: .9em;
->>>>>>> ef58555f1d226c1dc306cca392d83b9351ebd61e
     margin: 1em;
     padding: 1em; }
 
@@ -107,25 +97,16 @@ body {
   text-decoration: none;
   font-size: 2em; }
   #chatbox .bot {
-<<<<<<< HEAD
-    line-height: 1.5em;
-=======
     float: left;
     display: inline-block;
     font-size: .9em;
->>>>>>> ef58555f1d226c1dc306cca392d83b9351ebd61e
     color: #6d6d6d;
     border-radius: 25px;
     padding: .5em;
     margin: .5em;
     text-decoration: none;
-<<<<<<< HEAD
-    margin-right: 2em;
-    background-color: #d4dcf2;
-=======
     margin-right: 50%;
     background-color: #aad5e8;
->>>>>>> ef58555f1d226c1dc306cca392d83b9351ebd61e
     text-align: left; }
   #chatbox .fourBot {
     font-family: 'Geneva';
@@ -139,6 +120,19 @@ body {
     #chatbox .jamBot a {
       text-decoration: none;
       color: #6d6d6d; }
+  #chatbox .travBot {
+    float: left;
+    display: inline-block;
+    font-family: 'Geneva';
+    font-size: .9em;
+    color: #6d6d6d;
+    border-radius: 25px;
+    padding: .5em;
+    margin: .5em;
+    text-decoration: none;
+    margin-right: 50%;
+    background-color: #aad5e8;
+    text-align: left; }
   #chatbox .cityST {
     color: #6d6d6d;
     font-weight: 700;
@@ -152,12 +146,8 @@ body {
     padding: 0 2em;
     color: #6d6d6d;
     font-size: .5em;
-<<<<<<< HEAD
-    font-weight: 300; }
-=======
     font-weight: 300;
     text-align: left; }
->>>>>>> ef58555f1d226c1dc306cca392d83b9351ebd61e
   #chatbox .bro {
     float: right;
     display: inline-block;
