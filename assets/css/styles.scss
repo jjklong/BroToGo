@@ -9,6 +9,7 @@ $susy: (
 
 $lightblue: #aad5e8;
 $blue: #90c7e0;
+$chat: rgba(170,213,232,0.5);
 
 .wrapper{
   @include container;
@@ -69,8 +70,9 @@ body{
     }
   }
   h2{
+    box-shadow: 0px 0px 8px 1px black;
     color: white;
-    margin-top: 0.3em;
+    padding: 0.3em 0;
     margin-bottom: .1em;
     font-weight: 700;
     font-size: 10em;
@@ -87,7 +89,7 @@ body{
 
 .middle{
   @include span(12);
-  padding-top: 7em;
+  padding-top: 8em;
 }
 #modal_ul{
   display: none;
@@ -105,10 +107,33 @@ body{
     font-size: .75em;
     background-color: #eee;
     line-height: .9em;
-    margin: 1em;
+    margin: 0 1em;
     padding: 1em;
   }
 }
+.infoModal{
+  display: none;
+  background-color: white;
+  opacity: .5;
+  position: absolute;
+  bottom: 16em;
+  right: 0;
+  text-align: right;
+  font-family: 'Geneva';
+  h3{
+    font-size: 3em;
+    padding: .6em;
+  }
+  li{
+    padding: .3em;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  p{
+    padding: .6em;
+  }
+}
+
 #chatbox{
   padding: 0 1em 1em 1em;
   margin-bottom: 6em;
@@ -126,7 +151,7 @@ body{
     margin: .5em;
     text-decoration: none;
     margin-right: 50%;
-    background-color: $lightblue;
+    background-color: $chat;
     text-align: left;
   }
   .fourBot{
@@ -148,16 +173,17 @@ body{
   }
 
   .cityST{
+    border-radius: 5%;
+    border-bottom: 3px solid grey;
+    background: none;
+    display: inline-block;
     color: #6d6d6d;
     font-weight: 700;
     font-size: 1.1em;
-    div{
-      margin: 0;
-      padding: .5em;
-      text-align: left;
-    }
   }
   .weatherSum{
+    background: none;
+    display: inline-block;
     margin: 0;
     padding: 0 2em;
     color: #6d6d6d;
@@ -174,7 +200,7 @@ body{
     padding: .5em;
     margin: .5em;
     margin-left: 50%;
-    background-color: $lightblue;
+    background-color: $chat;
     text-align: right;
   }
   .breweryResults{
@@ -233,9 +259,9 @@ body{
 
 //BUTTONS
 .btm_buttons{
-  margin: 2em 0em;
+  padding: 2em 0em;
   border: none;
-
+  box-shadow: 0px 1px 10px 0px black;
 }
 #question{
   float: left;
@@ -248,7 +274,7 @@ body{
 }
 #send{
   float: right;
-  font-size: 4em;
+  font-size: 3em;
   color: darkgrey;
   background: transparent;
   border: none;
@@ -274,38 +300,56 @@ body{
     }
     .footer{
       font-size: .5em;
+      height: 18em;
     }
 }
 @media screen and (min-width:550px) and (max-width: 1200px) {
     .header{
       font-size: .5em;
     }
+    .infoModal{
+      font-size: .8em;
+    }
     .footer{
       font-size: .6em;
     }
     .btm_buttons{
-      margin: 4em 0;
       font-size: .75em;
+      padding: 4em 0em;
     }
 }
 @media screen and (min-width:380px) and (max-width: 550px) {
     .header{
       font-size: .5em;
     }
+    .formInput {
+      .userInput{
+        width: 60%;
+    }}
+    .infoModal{
+      font-size: .7em;
+    }
     .footer{
       font-size: .5em;
     }
     .btm_buttons{
-      margin: 4em 0;
       font-size: .75em;
+      padding: 4em 0em;
     }
 }
 @media screen and (max-width:380px) {
   .footer{
+    height: 18em;
     font-size: .4em;
   }
+  .formInput {
+    .userInput{
+  }}
+  .infoModal{
+    font-size: .6em;
+  }
   .btm_buttons{
-    margin: 4em 0;
     font-size: .7em;
+    padding: 4em 0em;
   }
 }
