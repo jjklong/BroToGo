@@ -52,7 +52,7 @@
 
  if(request.match(/create/g) == "create".toLowerCase()  ){
   setTimeout(function travBotreply3(){
-    $('#chatbox').append('<li class="bot">' + " My two bros Jordan and Travis turned me into the awesome BRObot you see before you today.   "+ '</li>');
+    $('#chatbox').append('<li class="bot">' + " My two bros Jordan and Travis turned me into the awesome BRObot you see before you today.    "+ '</li>');
   }, 1000);
 }
 

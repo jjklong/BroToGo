@@ -16,20 +16,13 @@ var options = {'@foursquare': '@foursquare: CITY,ST + ANYTHING',
     console.log(request);
 
 //Used http://jsfiddle.net/5ucD3/461/ to help understand this animation method
-    $('#chatbox').animate({scrollTop: $('#chatbox').prop("scrollHeight")}, 500);
+    $('#chatbox').animate({scrollTop: $('#chatbox').height()}, 500);
     $('#chatbox').append('<li class="bro">' + request + '</li>');
     $('.userInput').val("");
 
     if(request == help){
       $('#chatbox').append('<li class="bot">' + options['@foursquare'] + '<br>' + options['@beer'] + '<br>' + options['@sky']+ '<br>' + options['@concert'] + '</li>');
     }
-    if(request == 'hey'){
-      setTimeout(function botreply(){
-        $('#chatbox').append('<li class="bot">' + 'whoaa...sah brah!' + '</li>');
-      }, 1000);
-    }
-
-
   });
 
   var counter = 0;
@@ -58,17 +51,4 @@ var options = {'@foursquare': '@foursquare: CITY,ST + ANYTHING',
     e.preventDefault();
     $('.userInput').val('@concert');
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
