@@ -17,7 +17,7 @@ var options = {'@foursquare': '@foursquare: CITY,ST + ANYTHING',
 
 //Used http://jsfiddle.net/5ucD3/461/ to help understand this animation method
     $('#chatbox').animate({scrollTop: $('#chatbox').height()}, 500);
-// ERROR    // $('#chatbox').append('<li class="bro">' + request + '</li>');
+    // $('#chatbox').append('<li class="bro">' + request + '</li>');
     $('.userInput').val("");
 
     if(request == help){

@@ -10,7 +10,7 @@ var split = info.split(" ");
 console.log(split);
 
   $.ajax({
-    url: 'https://api.foursquare.com/v2/venues/search?client_id=XQHMSQWC4DRADZCVUDZMHSL0O4K4OZ2JYSZYSALZMDPQIKFF&client_secret=2RKEMUUKYNDCPMUUQWRDZZLGLMVWY23NPHCGYSUGQIM4C1M1&v=20130815&near='+split[1]+'&query= ' + split[2],
+    url: 'https://api.foursquare.com/v2/venues/search?client_id=XQHMSQWC4DRADZCVUDZMHSL0O4K4OZ2JYSZYSALZMDPQIKFF&client_secret=2RKEMUUKYNDCPMUUQWRDZZLGLMVWY23NPHCGYSUGQIM4C1M1&v=20130815&near='+split[1]+'&query= ' + split[2]
 }).success(function foodz(x) {
   var foodzResults = "";
   var foodzPhone = "";

@@ -9,7 +9,7 @@
 
   //Used http://jsfiddle.net/5ucD3/461/ to help understand this animation method
     $('#chatbox').animate({scrollTop: $('#chatbox').prop("scrollHeight")}, 500);
-    $('#chatbox').append('<li class="bro">' + request + '</li>');
+    // $('#chatbox').append('<li class="bro">' + request + '</li>');
 
 
 
@@ -57,7 +57,7 @@
 
     $('.userInput').val("");
 
-  // });
+  });
 
 
 
@@ -66,4 +66,4 @@
 
 
 
-});
+// });
